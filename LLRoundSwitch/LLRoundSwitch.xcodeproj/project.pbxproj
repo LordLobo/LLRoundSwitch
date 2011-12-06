@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		936B7CDC148D98D100F369AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936B7CDB148D98D100F369AF /* UIKit.framework */; };
+		936B7CDE148D98D100F369AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936B7CDD148D98D100F369AF /* Foundation.framework */; };
+		936B7CE0148D98D100F369AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936B7CDF148D98D100F369AF /* CoreGraphics.framework */; };
+		936B7CE6148D98D100F369AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 936B7CE4148D98D100F369AF /* InfoPlist.strings */; };
+		936B7CE8148D98D100F369AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7CE7148D98D100F369AF /* main.m */; };
+		936B7CEC148D98D100F369AF /* LLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7CEB148D98D100F369AF /* LLAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		936B7CD7148D98D100F369AF /* LLRoundSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLRoundSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		936B7CDB148D98D100F369AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		936B7CDD148D98D100F369AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		936B7CDF148D98D100F369AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		936B7CE3148D98D100F369AF /* LLRoundSwitch-Info.plist */ = {isa = PBXFileReference; path = "LLRoundSwitch-Info.plist"; sourceTree = "<group>"; };
+		936B7CE5148D98D100F369AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		936B7CE7148D98D100F369AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		936B7CE9148D98D100F369AF /* LLRoundSwitch-Prefix.pch */ = {isa = PBXFileReference; path = "LLRoundSwitch-Prefix.pch"; sourceTree = "<group>"; };
+		936B7CEA148D98D100F369AF /* LLAppDelegate.h */ = {isa = PBXFileReference; path = LLAppDelegate.h; sourceTree = "<group>"; };
+		936B7CEB148D98D100F369AF /* LLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		936B7CD4148D98D100F369AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936B7CDC148D98D100F369AF /* UIKit.framework in Frameworks */,
+				936B7CDE148D98D100F369AF /* Foundation.framework in Frameworks */,
+				936B7CE0148D98D100F369AF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		936B7CCC148D98D100F369AF = {
+			isa = PBXGroup;
+			children = (
+				936B7CE1148D98D100F369AF /* LLRoundSwitch */,
+				936B7CDA148D98D100F369AF /* Frameworks */,
+				936B7CD8148D98D100F369AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		936B7CD8148D98D100F369AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				936B7CD7148D98D100F369AF /* LLRoundSwitch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		936B7CDA148D98D100F369AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				936B7CDB148D98D100F369AF /* UIKit.framework */,
+				936B7CDD148D98D100F369AF /* Foundation.framework */,
+				936B7CDF148D98D100F369AF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		936B7CE1148D98D100F369AF /* LLRoundSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				936B7CEA148D98D100F369AF /* LLAppDelegate.h */,
+				936B7CEB148D98D100F369AF /* LLAppDelegate.m */,
+				936B7CE2148D98D100F369AF /* Supporting Files */,
+			);
+			path = LLRoundSwitch;
+			sourceTree = "<group>";
+		};
+		936B7CE2148D98D100F369AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				936B7CE3148D98D100F369AF /* LLRoundSwitch-Info.plist */,
+				936B7CE4148D98D100F369AF /* InfoPlist.strings */,
+				936B7CE7148D98D100F369AF /* main.m */,
+				936B7CE9148D98D100F369AF /* LLRoundSwitch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		936B7CD6148D98D100F369AF /* LLRoundSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 936B7CEF148D98D100F369AF /* Build configuration list for PBXNativeTarget "LLRoundSwitch" */;
+			buildPhases = (
+				936B7CD3148D98D100F369AF /* Sources */,
+				936B7CD4148D98D100F369AF /* Frameworks */,
+				936B7CD5148D98D100F369AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLRoundSwitch;
+			productName = LLRoundSwitch;
+			productReference = 936B7CD7148D98D100F369AF /* LLRoundSwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		936B7CCE148D98D100F369AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = none;
+			};
+			buildConfigurationList = 936B7CD1148D98D100F369AF /* Build configuration list for PBXProject "LLRoundSwitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 936B7CCC148D98D100F369AF;
+			productRefGroup = 936B7CD8148D98D100F369AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				936B7CD6148D98D100F369AF /* LLRoundSwitch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		936B7CD5148D98D100F369AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936B7CE6148D98D100F369AF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		936B7CD3148D98D100F369AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936B7CE8148D98D100F369AF /* main.m in Sources */,
+				936B7CEC148D98D100F369AF /* LLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		936B7CE4148D98D100F369AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				936B7CE5148D98D100F369AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		936B7CED148D98D100F369AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		936B7CEE148D98D100F369AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		936B7CF0148D98D100F369AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LLRoundSwitch/LLRoundSwitch-Prefix.pch";
+				INFOPLIST_FILE = "LLRoundSwitch/LLRoundSwitch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		936B7CF1148D98D100F369AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LLRoundSwitch/LLRoundSwitch-Prefix.pch";
+				INFOPLIST_FILE = "LLRoundSwitch/LLRoundSwitch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		936B7CD1148D98D100F369AF /* Build configuration list for PBXProject "LLRoundSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				936B7CED148D98D100F369AF /* Debug */,
+				936B7CEE148D98D100F369AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		936B7CEF148D98D100F369AF /* Build configuration list for PBXNativeTarget "LLRoundSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				936B7CF0148D98D100F369AF /* Debug */,
+				936B7CF1148D98D100F369AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 936B7CCE148D98D100F369AF /* Project object */;
+}

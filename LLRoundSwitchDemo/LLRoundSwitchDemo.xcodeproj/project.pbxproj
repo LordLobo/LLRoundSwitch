@@ -19,6 +19,7 @@
 		936B7D29148D9A7200F369AF /* LLRoundSwitchKnobLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D28148D9A7200F369AF /* LLRoundSwitchKnobLayer.m */; };
 		936B7D2C148D9A8C00F369AF /* LLRoundSwitchOutlineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D2B148D9A8C00F369AF /* LLRoundSwitchOutlineLayer.m */; };
 		936B7D2F148D9AA600F369AF /* LLRoundSwitchToggleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D2E148D9AA600F369AF /* LLRoundSwitchToggleLayer.m */; };
+		936B7D31148DA7EA00F369AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936B7D30148DA7EA00F369AF /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		936B7D2B148D9A8C00F369AF /* LLRoundSwitchOutlineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLRoundSwitchOutlineLayer.m; path = ../LLRoundSwitch/LLRoundSwitchOutlineLayer.m; sourceTree = "<group>"; };
 		936B7D2D148D9AA600F369AF /* LLRoundSwitchToggleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLRoundSwitchToggleLayer.h; path = ../LLRoundSwitch/LLRoundSwitchToggleLayer.h; sourceTree = "<group>"; };
 		936B7D2E148D9AA600F369AF /* LLRoundSwitchToggleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLRoundSwitchToggleLayer.m; path = ../LLRoundSwitch/LLRoundSwitchToggleLayer.m; sourceTree = "<group>"; };
+		936B7D30148DA7EA00F369AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936B7D31148DA7EA00F369AF /* QuartzCore.framework in Frameworks */,
 				936B7D07148D99B400F369AF /* UIKit.framework in Frameworks */,
 				936B7D09148D99B400F369AF /* Foundation.framework in Frameworks */,
 				936B7D0B148D99B400F369AF /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +65,7 @@
 		936B7CF7148D99B400F369AF = {
 			isa = PBXGroup;
 			children = (
+				936B7D30148DA7EA00F369AF /* QuartzCore.framework */,
 				936B7D0C148D99B400F369AF /* LLRoundSwitchDemo */,
 				936B7D05148D99B400F369AF /* Frameworks */,
 				936B7D03148D99B400F369AF /* Products */,

@@ -10,7 +10,7 @@
 
 @implementation LLRoundSwitchDemoViewController
 
-@synthesize switch1, switch2, switch3;
+@synthesize switch1, switch2, switch3, switch4;
 @synthesize fatSwtich, longSwitch;
 
 - (void)didReceiveMemoryWarning
@@ -41,6 +41,9 @@
     // and give switch3 an event too
     [switch3 addTarget:self action:@selector(switch3Toggled:) forControlEvents:UIControlEventValueChanged];
     
+    // switch4 event - toggle switch1 visibility
+    [switch4 addTarget:self action:@selector(switch4Toggled:) forControlEvents:UIControlEventValueChanged];
+    
     // fatswitch doesn't have time for words
     fatSwtich.OnText = @"1";
     fatSwtich.offText = @"0";
@@ -59,6 +62,12 @@
 - (void)switch3Toggled:(id)sender
 {
     [fatSwtich setOn:!fatSwtich.isOn animated:YES];
+}
+
+- (void)switch4Toggled:(id)sender
+{
+    // toggle switch1 visibilty to try to get re-renders to induce a leak
+    [switch1 setHidden:!switch1.hidden];
 }
 
 - (void)viewDidUnload

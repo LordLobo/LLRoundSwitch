@@ -33,7 +33,7 @@ CGGradientRef GradientCreateWithColors(CGColorSpaceRef colorSpace, CGColorRef st
 	CGContextClip(context);
 	CGColorRef knobStartColor = [UIColor colorWithWhite:0.82 alpha:1.0].CGColor;
 	CGColorRef knobEndColor = (self.gripped) ? [UIColor colorWithWhite:0.894 alpha:1.0].CGColor : [UIColor colorWithWhite:0.996 alpha:1.0].CGColor;
-	CGPoint topPoint = CGPointMake(0, 0);
+	CGPoint topPoint = CGPointMake(0, 0);	
 	CGPoint bottomPoint = CGPointMake(0, knobRadius + 2);
 	CGGradientRef knobGradient = GradientCreateWithColors(colorSpace, knobStartColor, knobEndColor);
 	CGContextDrawLinearGradient(context, knobGradient, topPoint, bottomPoint, 0);

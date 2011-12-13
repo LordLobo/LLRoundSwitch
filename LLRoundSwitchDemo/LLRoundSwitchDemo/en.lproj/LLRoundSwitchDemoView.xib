@@ -139,7 +139,6 @@
 						<string key="NSFrame">{{20, 340}, {280, 33}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:196</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -245,6 +244,14 @@
 						<reference key="destination" ref="774585933"/>
 					</object>
 					<int key="connectionID">23</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">switch4</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="191548217"/>
+					</object>
+					<int key="connectionID">24</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -357,7 +364,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">23</int>
+			<int key="maxID">24</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -378,6 +385,7 @@
 						<string key="switch1">LLRoundSwitch</string>
 						<string key="switch2">LLRoundSwitch</string>
 						<string key="switch3">LLRoundSwitch</string>
+						<string key="switch4">LLRoundSwitch</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="fatSwtich">
@@ -398,6 +406,10 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="switch3">
 							<string key="name">switch3</string>
+							<string key="candidateClassName">LLRoundSwitch</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="switch4">
+							<string key="name">switch4</string>
 							<string key="candidateClassName">LLRoundSwitch</string>
 						</object>
 					</dictionary>

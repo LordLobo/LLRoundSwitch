@@ -16,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet LLRoundSwitch *switch1;
 @property (strong, nonatomic) IBOutlet LLRoundSwitch *switch2;
 @property (strong, nonatomic) IBOutlet LLRoundSwitch *switch3;
+@property (strong, nonatomic) IBOutlet LLRoundSwitch *switch4;
 
 @property (strong, nonatomic) IBOutlet LLRoundSwitch *longSwitch;
 @property (strong, nonatomic) IBOutlet LLRoundSwitch *fatSwtich;

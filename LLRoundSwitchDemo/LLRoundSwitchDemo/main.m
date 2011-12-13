@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "LLAppDelegate.h"
+#import "LLRoundSwitchDemoAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([LLAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([LLRoundSwitchDemoAppDelegate class]));
     }
 }

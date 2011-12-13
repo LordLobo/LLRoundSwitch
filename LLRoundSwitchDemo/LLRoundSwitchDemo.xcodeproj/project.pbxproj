@@ -12,9 +12,9 @@
 		936B7D0B148D99B400F369AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936B7D0A148D99B400F369AF /* CoreGraphics.framework */; };
 		936B7D11148D99B400F369AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 936B7D0F148D99B400F369AF /* InfoPlist.strings */; };
 		936B7D13148D99B400F369AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D12148D99B400F369AF /* main.m */; };
-		936B7D17148D99B400F369AF /* LLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D16148D99B400F369AF /* LLAppDelegate.m */; };
-		936B7D1A148D99B400F369AF /* LLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D19148D99B400F369AF /* LLViewController.m */; };
-		936B7D1D148D99B400F369AF /* LLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936B7D1B148D99B400F369AF /* LLViewController.xib */; };
+		936B7D17148D99B400F369AF /* LLRoundSwitchDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D16148D99B400F369AF /* LLRoundSwitchDemoAppDelegate.m */; };
+		936B7D1A148D99B400F369AF /* LLRoundSwitchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D19148D99B400F369AF /* LLRoundSwitchDemoViewController.m */; };
+		936B7D1D148D99B400F369AF /* LLRoundSwitchDemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936B7D1B148D99B400F369AF /* LLRoundSwitchDemoView.xib */; };
 		936B7D26148D9A2D00F369AF /* LLRoundSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D25148D9A2D00F369AF /* LLRoundSwitch.m */; };
 		936B7D29148D9A7200F369AF /* LLRoundSwitchKnobLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D28148D9A7200F369AF /* LLRoundSwitchKnobLayer.m */; };
 		936B7D2C148D9A8C00F369AF /* LLRoundSwitchOutlineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 936B7D2B148D9A8C00F369AF /* LLRoundSwitchOutlineLayer.m */; };
@@ -31,11 +31,11 @@
 		936B7D10148D99B400F369AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		936B7D12148D99B400F369AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		936B7D14148D99B400F369AF /* LLRoundSwitchDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLRoundSwitchDemo-Prefix.pch"; sourceTree = "<group>"; };
-		936B7D15148D99B400F369AF /* LLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAppDelegate.h; sourceTree = "<group>"; };
-		936B7D16148D99B400F369AF /* LLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAppDelegate.m; sourceTree = "<group>"; };
-		936B7D18148D99B400F369AF /* LLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLViewController.h; sourceTree = "<group>"; };
-		936B7D19148D99B400F369AF /* LLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLViewController.m; sourceTree = "<group>"; };
-		936B7D1C148D99B400F369AF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LLViewController.xib; sourceTree = "<group>"; };
+		936B7D15148D99B400F369AF /* LLRoundSwitchDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLRoundSwitchDemoAppDelegate.h; sourceTree = "<group>"; };
+		936B7D16148D99B400F369AF /* LLRoundSwitchDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLRoundSwitchDemoAppDelegate.m; sourceTree = "<group>"; };
+		936B7D18148D99B400F369AF /* LLRoundSwitchDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLRoundSwitchDemoViewController.h; sourceTree = "<group>"; };
+		936B7D19148D99B400F369AF /* LLRoundSwitchDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLRoundSwitchDemoViewController.m; sourceTree = "<group>"; };
+		936B7D1C148D99B400F369AF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LLRoundSwitchDemoView.xib; sourceTree = "<group>"; };
 		936B7D24148D9A2D00F369AF /* LLRoundSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLRoundSwitch.h; path = ../LLRoundSwitch/LLRoundSwitch.h; sourceTree = "<group>"; };
 		936B7D25148D9A2D00F369AF /* LLRoundSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLRoundSwitch.m; path = ../LLRoundSwitch/LLRoundSwitch.m; sourceTree = "<group>"; };
 		936B7D27148D9A7200F369AF /* LLRoundSwitchKnobLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLRoundSwitchKnobLayer.h; path = ../LLRoundSwitch/LLRoundSwitchKnobLayer.h; sourceTree = "<group>"; };
@@ -65,7 +65,6 @@
 		936B7CF7148D99B400F369AF = {
 			isa = PBXGroup;
 			children = (
-				936B7D30148DA7EA00F369AF /* QuartzCore.framework */,
 				936B7D0C148D99B400F369AF /* LLRoundSwitchDemo */,
 				936B7D05148D99B400F369AF /* Frameworks */,
 				936B7D03148D99B400F369AF /* Products */,
@@ -83,6 +82,7 @@
 		936B7D05148D99B400F369AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				936B7D30148DA7EA00F369AF /* QuartzCore.framework */,
 				936B7D06148D99B400F369AF /* UIKit.framework */,
 				936B7D08148D99B400F369AF /* Foundation.framework */,
 				936B7D0A148D99B400F369AF /* CoreGraphics.framework */,
@@ -94,11 +94,11 @@
 			isa = PBXGroup;
 			children = (
 				936B7D23148D99CA00F369AF /* LLRoundSwitch */,
-				936B7D15148D99B400F369AF /* LLAppDelegate.h */,
-				936B7D16148D99B400F369AF /* LLAppDelegate.m */,
-				936B7D18148D99B400F369AF /* LLViewController.h */,
-				936B7D19148D99B400F369AF /* LLViewController.m */,
-				936B7D1B148D99B400F369AF /* LLViewController.xib */,
+				936B7D15148D99B400F369AF /* LLRoundSwitchDemoAppDelegate.h */,
+				936B7D16148D99B400F369AF /* LLRoundSwitchDemoAppDelegate.m */,
+				936B7D18148D99B400F369AF /* LLRoundSwitchDemoViewController.h */,
+				936B7D19148D99B400F369AF /* LLRoundSwitchDemoViewController.m */,
+				936B7D1B148D99B400F369AF /* LLRoundSwitchDemoView.xib */,
 				936B7D0D148D99B400F369AF /* Supporting Files */,
 			);
 			path = LLRoundSwitchDemo;
@@ -183,7 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				936B7D11148D99B400F369AF /* InfoPlist.strings in Resources */,
-				936B7D1D148D99B400F369AF /* LLViewController.xib in Resources */,
+				936B7D1D148D99B400F369AF /* LLRoundSwitchDemoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +195,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				936B7D13148D99B400F369AF /* main.m in Sources */,
-				936B7D17148D99B400F369AF /* LLAppDelegate.m in Sources */,
-				936B7D1A148D99B400F369AF /* LLViewController.m in Sources */,
+				936B7D17148D99B400F369AF /* LLRoundSwitchDemoAppDelegate.m in Sources */,
+				936B7D1A148D99B400F369AF /* LLRoundSwitchDemoViewController.m in Sources */,
 				936B7D26148D9A2D00F369AF /* LLRoundSwitch.m in Sources */,
 				936B7D29148D9A7200F369AF /* LLRoundSwitchKnobLayer.m in Sources */,
 				936B7D2C148D9A8C00F369AF /* LLRoundSwitchOutlineLayer.m in Sources */,
@@ -215,12 +215,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		936B7D1B148D99B400F369AF /* LLViewController.xib */ = {
+		936B7D1B148D99B400F369AF /* LLRoundSwitchDemoView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				936B7D1C148D99B400F369AF /* en */,
 			);
-			name = LLViewController.xib;
+			name = LLRoundSwitchDemoView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -312,6 +312,7 @@
 				936B7D22148D99B400F369AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

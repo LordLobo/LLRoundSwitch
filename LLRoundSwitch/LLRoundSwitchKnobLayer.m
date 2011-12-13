@@ -10,7 +10,7 @@
 
 #import "LLRoundSwitchKnobLayer.h"
 
-CGGradientRef GradientRefWithColors(CGColorSpaceRef colorSpace, CGColorRef startColor, CGColorRef endColor);
+CGGradientRef GradientCreateWithColors(CGColorSpaceRef colorSpace, CGColorRef startColor, CGColorRef endColor);
 
 @implementation LLRoundSwitchKnobLayer
 
@@ -35,28 +35,29 @@ CGGradientRef GradientRefWithColors(CGColorSpaceRef colorSpace, CGColorRef start
 	CGColorRef knobEndColor = (self.gripped) ? [UIColor colorWithWhite:0.894 alpha:1.0].CGColor : [UIColor colorWithWhite:0.996 alpha:1.0].CGColor;
 	CGPoint topPoint = CGPointMake(0, 0);
 	CGPoint bottomPoint = CGPointMake(0, knobRadius + 2);
-	CGGradientRef knobGradient = GradientRefWithColors(colorSpace, knobStartColor, knobEndColor);
+	CGGradientRef knobGradient = GradientCreateWithColors(colorSpace, knobStartColor, knobEndColor);
 	CGContextDrawLinearGradient(context, knobGradient, topPoint, bottomPoint, 0);
     
 	// knob inner highlight
 	CGContextAddEllipseInRect(context, CGRectInset(knobRect, 0.5, 0.5));
 	CGContextAddEllipseInRect(context, CGRectInset(knobRect, 1.5, 1.5));
 	CGContextEOClip(context);
-	CGGradientRef knobHighlightGradient = GradientRefWithColors(colorSpace, [UIColor whiteColor].CGColor, [UIColor colorWithWhite:1.0 alpha:0.5].CGColor);
+	CGGradientRef knobHighlightGradient = GradientCreateWithColors(colorSpace, [UIColor whiteColor].CGColor, [UIColor colorWithWhite:1.0 alpha:0.5].CGColor);
 	CGContextDrawLinearGradient(context, knobHighlightGradient, topPoint, bottomPoint, 0);
     
+    CFRelease(knobGradient);
+    CFRelease(knobHighlightGradient);
 	CGColorSpaceRelease(colorSpace);
 }
 
-CGGradientRef GradientRefWithColors(CGColorSpaceRef colorSpace, CGColorRef startColor, CGColorRef endColor)
+CGGradientRef GradientCreateWithColors(CGColorSpaceRef colorSpace, CGColorRef startColor, CGColorRef endColor)
 {
-	CGFloat colorStops[2] = {0.0, 1.0};
-	CGColorRef colors[] = {startColor, endColor};
-	CFArrayRef colorsArray = CFArrayCreate(NULL, (const void**)colors, sizeof(colors) / sizeof(CGColorRef), &kCFTypeArrayCallBacks);
-	CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, colorsArray, colorStops);
-	// [NSMakeCollectable(gradient) autorelease];
-	CFRelease(colorsArray);
-	return gradient;
+    CGFloat colorStops[2] = {0.0, 1.0};
+    NSArray *colors = [NSArray arrayWithObjects:(__bridge id)startColor, (__bridge id)endColor, nil];
+    
+    CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, colorStops);
+    
+    return gradient;
 }
 
 - (void)setGripped:(BOOL)newGripped

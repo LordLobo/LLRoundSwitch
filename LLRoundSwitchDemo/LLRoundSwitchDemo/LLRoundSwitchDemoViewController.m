@@ -29,7 +29,9 @@
     switch1.on = YES;
     
     // Let's make switch1 do something when toggled
-    [switch1 addTarget:self action:@selector(switch1Toggled:) forControlEvents:UIControlEventValueChanged];
+    [switch1 addTarget:self 
+                action:@selector(switch1Toggled:) 
+      forControlEvents:UIControlEventValueChanged];
     
     // How about a little red and a turn-on for switch2
     switch2.onTintColor = [UIColor redColor];
@@ -39,10 +41,14 @@
     switch3.onTintColor = [UIColor blackColor];
     switch3.on = YES;
     // and give switch3 an event too
-    [switch3 addTarget:self action:@selector(switch3Toggled:) forControlEvents:UIControlEventValueChanged];
+    [switch3 addTarget:self 
+                action:@selector(switch3Toggled:)
+      forControlEvents:UIControlEventValueChanged];
     
     // switch4 event - toggle switch1 visibility
-    [switch4 addTarget:self action:@selector(switch4Toggled:) forControlEvents:UIControlEventValueChanged];
+    [switch4 addTarget:self 
+                action:@selector(switch4Toggled:)
+      forControlEvents:UIControlEventValueChanged];
     
     // fatswitch doesn't have time for words
     fatSwtich.OnText = @"1";

@@ -37,7 +37,11 @@
     
     if (self.clip)
     {
-        UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(-self.frame.origin.x + 0.5, 0, self.bounds.size.width / 2.0 + self.bounds.size.height / 2.0 - 1.5, self.bounds.size.height)
+        UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(-self.frame.origin.x + 0.5,
+                                                                                      0, 
+                                                                                      self.bounds.size.width / 2.0 + 
+                                                                                      self.bounds.size.height / 2.0 - 1.5, 
+                                                                                      self.bounds.size.height)
                                                               cornerRadius:self.bounds.size.height / 2.0];
         CGContextAddPath(context, bezierPath.CGPath);
         CGContextClip(context);
@@ -69,30 +73,27 @@
     
     // 'ON' state label (self.onString)
     CGSize onTextSize = [self.onString sizeWithFont:font];
-    CGPoint onTextPoint = CGPointMake((textSpaceWidth - onTextSize.width) / 2.0 + knobRadius * .15, floorf((self.bounds.size.height - onTextSize.height) / 2.0) + 1.0);
+    CGPoint onTextPoint = CGPointMake((textSpaceWidth - onTextSize.width) / 2.0 + knobRadius * .15, 
+                                      floorf((self.bounds.size.height - onTextSize.height) / 2.0) + 1.0);
     [[UIColor colorWithWhite:0.45 alpha:1.0] set]; // .2 & .4
-    [self.onString drawAtPoint:CGPointMake(onTextPoint.x, onTextPoint.y - 1.0) withFont:font];
+    [self.onString drawAtPoint:CGPointMake(onTextPoint.x, onTextPoint.y - 1.0)
+                      withFont:font];
     [[UIColor whiteColor] set];
-    [self.onString drawAtPoint:onTextPoint withFont:font];
+    [self.onString drawAtPoint:onTextPoint
+                      withFont:font];
     
     // off state label (self.offstring)
     CGSize offTextSize = [self.offString sizeWithFont:font];
-	CGPoint offTextPoint = CGPointMake(textSpaceWidth + (textSpaceWidth - offTextSize.width) / 2.0 + knobRadius * .86, floorf((self.bounds.size.height - offTextSize.height) / 2.0) + 1.0);
+	CGPoint offTextPoint = CGPointMake(textSpaceWidth + (textSpaceWidth - offTextSize.width) / 2.0 + knobRadius * .86, 
+                                       floorf((self.bounds.size.height - offTextSize.height) / 2.0) + 1.0);
 	[[UIColor whiteColor] set];
-	[self.offString drawAtPoint:CGPointMake(offTextPoint.x, offTextPoint.y + 1.0) withFont:font];
+	[self.offString drawAtPoint:CGPointMake(offTextPoint.x, offTextPoint.y + 1.0) 
+                       withFont:font];
 	[[UIColor colorWithWhite:0.52 alpha:1.0] set];
-	[self.offString drawAtPoint:offTextPoint withFont:font];
+	[self.offString drawAtPoint:offTextPoint 
+                       withFont:font];
     
 	UIGraphicsPopContext();
 }
-
-
-
-
-
-
-
-
-
 
 @end

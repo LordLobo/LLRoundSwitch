@@ -16,3 +16,5 @@ build/*
 # osx noise
 .DS_Store
 profile
+
+LLRoundSwitchDemo/LLRoundSwitchDemo.xcodeproj/project.xcworkspace/xcuserdata/lordlobo.xcuserdatad/UserInterfaceState.xcuserstate

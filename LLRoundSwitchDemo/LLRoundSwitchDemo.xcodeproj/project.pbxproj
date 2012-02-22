@@ -157,7 +157,7 @@
 		936B7CF9148D99B400F369AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = none;
 			};
 			buildConfigurationList = 936B7CFC148D99B400F369AF /* Build configuration list for PBXProject "LLRoundSwitchDemo" */;

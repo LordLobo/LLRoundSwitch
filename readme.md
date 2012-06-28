@@ -7,5 +7,6 @@ LLRoundSwitch - Enhanced UISwitch replacement with ARC support<br />
                       No leak found yet.<br />
 02-23-2012 v1.0 Live: Calling this 1.0 right now.  Adding to CocoaPods.<br />
 05-21-2012 v1.0.0: Adding tag so this works with CocoaPods.<br />
+06-28-2012 v1.0.1: Fixes for Autoreleased CGColor things, more on this soon (not final)
 <br />
 Short story: A new version of DCRoundSwitch with ARC and a Github repo I pay attention to. 

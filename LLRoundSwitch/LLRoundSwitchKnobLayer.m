@@ -32,10 +32,13 @@ CGGradientRef GradientCreateWithColors(CGColorSpaceRef colorSpace, CGColorRef st
 	CGContextAddEllipseInRect(context, knobRect);
 	CGContextClip(context);
     
-	CGColorRef knobStartColor = [UIColor colorWithWhite:0.82 alpha:1.0].CGColor;
-	CGColorRef knobEndColor = (self.gripped) ? 
-                              [UIColor colorWithWhite:0.894 alpha:1.0].CGColor : 
-                              [UIColor colorWithWhite:0.996 alpha:1.0].CGColor;
+    // using .CGColor triggers an ARC auto-release bug which causes the UIColor object to me immediately released
+    // and causes the CGColorRefs to disappear before we can use them- so we're going to use UIColor here, then extract the CGColorRef
+    // when we actually create the gratient.  There are several ways to fix this, but we'll se the most straight-forward: CGColorRetain/Release
+    
+    // For kmore info on this bug, see http://weblog.bignerdranch.com/296-arc-gotcha-unexpectedly-short-lifetimes
+    CGColorRef knobStartColor = CGColorRetain([UIColor colorWithWhite:0.82 alpha:1.0].CGColor);
+	CGColorRef knobEndColor = CGColorRetain((self.gripped) ? [UIColor colorWithWhite:0.894 alpha:1.0].CGColor : [UIColor colorWithWhite:0.996 alpha:1.0].CGColor);
     
 	CGPoint topPoint = CGPointMake(0, 0);	
 	CGPoint bottomPoint = CGPointMake(0, knobRadius + 2);
@@ -56,6 +59,8 @@ CGGradientRef GradientCreateWithColors(CGColorSpaceRef colorSpace, CGColorRef st
     CFRelease(knobGradient);
     CFRelease(knobHighlightGradient);
 	CGColorSpaceRelease(colorSpace);
+    CGColorRelease(knobStartColor);
+    CGColorRelease(knobEndColor);
 }
 
 CGGradientRef GradientCreateWithColors(CGColorSpaceRef colorSpace, CGColorRef startColor, CGColorRef endColor)

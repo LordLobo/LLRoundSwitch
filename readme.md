@@ -1,3 +1,5 @@
+![](http://farm9.staticflickr.com/8170/7910295380_bb5c29e992.jpg)
+
 LLRoundSwitch - Enhanced UISwitch replacement with ARC support<br />
 ==============================================================<br />
 <br />

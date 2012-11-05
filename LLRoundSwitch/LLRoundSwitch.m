@@ -132,6 +132,11 @@
 	self.frame = newFrame;
 }
 
+- (CGSize)sizeThatFits:(CGSize)size {
+    // shouldn't this be calculated? uses the values from sizeToFit
+    return CGSizeMake(77.0f, 27.0f);
+}
+
 - (void)useLayerMasking
 {
 	// turn of the manual clipping (done in toggleLayer's drawInContext:)

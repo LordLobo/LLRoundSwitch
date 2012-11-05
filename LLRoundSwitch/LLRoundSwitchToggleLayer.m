@@ -66,7 +66,14 @@
     CGContextSetShadowWithColor(context, CGSizeMake(0,0), 0, NULL);
     
     // strings
-    UIFont *font = [UIFont boldSystemFontOfSize:ceilf(self.bounds.size.height * .6)];
+    UIFont *font = nil;
+    CGFloat fontSize = ceilf(self.bounds.size.height * .6);
+    
+    if (self.fontFamiliy) {
+        font = [UIFont fontWithName:self.fontFamiliy size:fontSize];
+    } else {
+        font = [UIFont boldSystemFontOfSize:fontSize];
+    }
     CGFloat textSpaceWidth = (self.bounds.size.width / 2) - (knobRadius / 2);
     
     UIGraphicsPushContext(context);

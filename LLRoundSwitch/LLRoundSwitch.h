@@ -35,6 +35,7 @@
 @property (nonatomic, getter=isOn) BOOL on;				// default: NO
 @property (nonatomic, copy) NSString *onText;			// default: 'ON' - not automatically localized!
 @property (nonatomic, copy) NSString *offText;			// default: 'OFF' - not automatically localized!
+@property (nonatomic, retain) UIFont *font;               // default: boldSystemFont, size is calculated automatically
 
 - (void)setOn:(BOOL)newOn animated:(BOOL)animated;
 

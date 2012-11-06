@@ -36,6 +36,7 @@
     // How about a little red and a turn-on for switch2
     switch2.onTintColor = [UIColor redColor];
     switch2.on = YES;
+    switch2.fontFamiliy = @"Futura";
     
     // switch3 wants to be black and on
     switch3.onTintColor = [UIColor blackColor];

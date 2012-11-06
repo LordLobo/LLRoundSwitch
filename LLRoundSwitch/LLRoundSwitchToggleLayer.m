@@ -25,6 +25,7 @@
         self.onString = anOnString;
         self.offString = anOffString;
         self.onTintColor = anOnTintColor;
+        self.font = [UIFont boldSystemFontOfSize:10.0f];
     }
     return self;
 }
@@ -66,7 +67,8 @@
     CGContextSetShadowWithColor(context, CGSizeMake(0,0), 0, NULL);
     
     // strings
-    UIFont *font = [UIFont boldSystemFontOfSize:ceilf(self.bounds.size.height * .6)];
+    UIFont *font = [self.font fontWithSize:ceilf(self.bounds.size.height * .6)];
+    
     CGFloat textSpaceWidth = (self.bounds.size.width / 2) - (knobRadius / 2);
     
     UIGraphicsPushContext(context);
@@ -96,4 +98,8 @@
 	UIGraphicsPopContext();
 }
 
+- (void)setFont:(UIFont *)font {
+    _font = font;
+    [self setNeedsDisplay];
+}
 @end

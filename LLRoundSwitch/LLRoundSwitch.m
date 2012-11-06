@@ -132,6 +132,11 @@
 	self.frame = newFrame;
 }
 
+- (CGSize)sizeThatFits:(CGSize)size {
+    // shouldn't this be calculated? uses the values from sizeToFit
+    return CGSizeMake(77.0f, 27.0f);
+}
+
 - (void)useLayerMasking
 {
 	// turn of the manual clipping (done in toggleLayer's drawInContext:)
@@ -386,4 +391,33 @@
 	}
 }
 
+- (void)setFont:(UIFont *)font {
+    _font = font;
+    toggleLayer.font = _font;
+    [toggleLayer setNeedsDisplay];
+}
+
+
+#pragma mark - accessibility
+
+
+- (BOOL)isAccessibilityElement {
+    return YES;
+}
+
+- (NSString *)accessibilityLabel {
+    return NSLocalizedString(@"On off switch", nil);
+}
+
+- (UIAccessibilityTraits)accessibilityTraits {
+    return UIAccessibilityTraitButton;
+}
+
+- (NSString *)accessibilityHint {
+    if (self.on) {
+        return NSLocalizedString(@"Change switch to %@", self.offText);
+    } else {
+        return NSLocalizedString(@"Change switch to %@", self.onText);
+    }
+}
 @end

@@ -392,7 +392,7 @@
 }
 
 - (void)setFont:(UIFont *)font {
-    _font = [font copy];
+    _font = font;
     toggleLayer.font = _font;
     [toggleLayer setNeedsDisplay];
 }

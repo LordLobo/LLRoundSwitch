@@ -16,7 +16,7 @@
 @property (nonatomic, retain) UIColor *onTintColor;
 @property (nonatomic, retain) NSString *onString;
 @property (nonatomic, retain) NSString *offString;
-@property (nonatomic, retain) NSString *fontFamiliy;
+@property (nonatomic, retain) UIFont *font;
 
 @property (nonatomic) BOOL drawOnTint;
 @property (nonatomic) BOOL clip;

@@ -391,9 +391,9 @@
 	}
 }
 
-- (void)setFontFamiliy:(NSString *)fontFamiliy {
-    _fontFamiliy = [fontFamiliy copy];
-    toggleLayer.fontFamiliy = _fontFamiliy;
+- (void)setFont:(UIFont *)font {
+    _font = [font copy];
+    toggleLayer.font = _font;
     [toggleLayer setNeedsDisplay];
 }
 
